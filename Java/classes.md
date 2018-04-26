@@ -7,7 +7,13 @@ A class is a user defined blueprint or prototype from which objects are created.
 - 4.Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
 - 5.Body: The class body surrounded by braces, { }.
 - Class defined with using class
-![Image](https://github.com/rdyz6/cs4330_finalproject.git/raw/master/src/common/images/class.png)
+```Java
+class Bicycle{
+int cadence = 0;
+int speed = 0;
+int gear = 0;
+}
+
 
 ## Constructors and Initializers
 ## New instances

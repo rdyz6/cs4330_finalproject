@@ -11,3 +11,28 @@ class theclass{
 }
 ```
 ## byte
+The byte data type is an 8-bit signed two’s complement integer.The byte data type is useful for saving memory in large arrays.
+- size: 8 bit
+- value: -128 ~ 127
+```
+class theclass
+{
+    public static void main(String args[]) 
+    {
+        byte a = 126;
+        System.out.println(a);
+        a++;
+        System.out.println(a);
+        a++;
+        System.out.println(a);
+        a++;
+        System.out.println(a);
+    }    
+}
+```
+output:
+- 126
+- 127
+- -128
+- -127
+

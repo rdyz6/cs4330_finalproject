@@ -1,2 +1,9 @@
 # Java's language purpose
-Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets)
+* Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+* Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time.
+- There were five primary goals in the creation of the Java language:[17]
+  - It must be "simple, object-oriented, and familiar".
+  - It must be "robust and secure".
+  - It must be "architecture-neutral and portable".
+  - It must execute with "high performance".
+  - It must be "interpreted, threaded, and dynamic"

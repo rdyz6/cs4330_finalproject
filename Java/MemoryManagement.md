@@ -19,4 +19,14 @@ Method Area is part of space in the Perm Gen and used to store class structure (
 Memory Pools are created by JVM memory managers to create a pool of immutable objects, if implementation supports it. String Pool is a good example of this kind of memory pool. Memory Pool can belong to Heap or Perm Gen, depending on the JVM memory manager implementation.
 ##### Runtime Constant Pool
 Runtime constant pool is per-class runtime representation of constant pool in a class. It contains class runtime constants and static methods. Runtime constant pool is the part of method area.
-
+##### Java Stack Memory
+Java Stack memory is used for execution of a thread. They contain method specific values that are short-lived and references to other objects in the heap that are getting referred from the method. You should read Difference between Stack and Heap Memory.
+## Java Garbage Collection
+Garbage Collector is the program running in the background that looks into all the objects in the memory and find out objects that are not referenced by any part of the program. All these unreferenced objects are deleted and space is reclaimed for allocation to other objects.
+One of the basic way of garbage collection involves three steps:
+- Marking: This is the first step where garbage collector identifies which objects are in use and which ones are not in use.
+- Normal Deletion: Garbage Collector removes the unused objects and reclaim the free space to be allocated to other objects.
+- Deletion with Compacting: For better performance, after deleting unused objects, all the survived objects can be moved to be together.   This will increase the performance of allocation of memory to newer objects.
+There are two problems with simple mark and delete approach.
+- First one is that it’s not efficient because most of the newly created objects will become unused
+- Secondly objects that are in-use for multiple garbage collection cycle are most likely to be in-use for future cycles too.

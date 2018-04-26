@@ -8,12 +8,22 @@ A class is a user defined blueprint or prototype from which objects are created.
 - 5.Body: The class body surrounded by braces, { }.
 - Class defined with using class
 ```Java
-class Bicycle{
-int cadence = 0;
-int speed = 0;
-int gear = 0;
-}
-
-
+    class Bicycle{
+        int cadence = 0;
+        int speed = 0;
+        int gear = 0;
+    }
+```
 ## Constructors and Initializers
-## New instances
+One of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.
+When a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.
+```
+public class Puppy {
+   public Puppy() {
+   }
+
+   public Puppy(String name) {
+      // This constructor has one parameter, name.
+   }
+}
+```

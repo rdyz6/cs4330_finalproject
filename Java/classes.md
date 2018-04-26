@@ -6,7 +6,8 @@ A class is a user defined blueprint or prototype from which objects are created.
 - 3.Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
 - 4.Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
 - 5.Body: The class body surrounded by braces, { }.
-Class defined with using class
-![Image](https://github.com/rdyz6/cs4330_finalproject.git)
+- Class defined with using class
+![Image](https://github.com/rdyz6/cs4330_finalproject.git/images/class.png)
+
 ## Constructors and Initializers
 ## New instances

@@ -29,6 +29,7 @@ Output:
 - X: 0 Y: 0
 - X: 100 Y: 100
 - X: 0 Y: 0
+
 We see that the change made to the argument passed into the process function was not preserved after we exited the scope of the function. This loss of data was due to the fact that a copy of the value held by the someValue variable was placed on the call stack prior to the execution of the process function.
 Additionally, the action of popping the call stack at the completion of the process method is illustrated in the figure below. Note that the value copied as the argument to the process method is lost (reclaimed) once the call stack is popped, and therefore, 
 all changes made to that value are in turn lost during the reclamation step.

@@ -5,7 +5,7 @@ You can refer to any member of the current object from within an instance method
 
 ## using this with a field
 The most common reason for using the this keyword is because a field is shadowed by a method or constructor parameter.
-```
+```Java
 public class Point {
     public int x = 0;
     public int y = 0;
@@ -21,7 +21,7 @@ public class Point {
 From within a constructor, you can also use the this keyword to call another constructor in the same class. 
 Doing so is called an explicit constructor invocation. 
 Here's another Rectangle class, with a different implementation from the one in the Objects section.
-```
+```Java
 public class Rectangle {
     private int x, y;
     private int width, height;

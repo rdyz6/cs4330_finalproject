@@ -1,7 +1,7 @@
 # Java and Javascript language comparison
 # Team Memebrs 
-Shiqi Wang
-Runnan Dong
+- Shiqi Wang
+- Runnan Dong(rdyz6)
 # Java Documentation
 * Language Purpose
 * Types

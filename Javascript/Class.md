@@ -1,7 +1,9 @@
-
+---
 Class
-Classes are also called the “special function, the class has two components, class expressions and class declaration
+---
+* Classes are also called the “special function, the class has two components, class expressions and class declaration
 
+```
 Class declararion:
 class Rectangle {
   constructor(height, width) {
@@ -28,7 +30,10 @@ var Rectangle = class Rectangle2 {
 };
 console.log(Rectangle.name);
 // output: "Rectangle2"
-To create new instance, The new operator creates an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+```
+* To create new instance, The new operator creates an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+
+```
 function Car(make, model, year) {
   this.make = make;
   this.model = model;
@@ -40,41 +45,43 @@ var car1 = new Car('Eagle', 'Talon TSi', 1993);
 console.log(car1.make);
 
 Output: eagle.
-
-***Initializing and constructing
+```
+* Initializing and constructing
 First method:
+
+```
 <script type="text/javascript">
 function init(){
 
-
-         }
+}
 </script>
- Second method(using windows.onload):
+```
+* Second method(using windows.onload):
+
+```
 <script type="text/javascript">
     window.onload=function(){ 
    }
 </script>
+```
+* Deinitializing and destructing
 
-***Deinitializing and destructing
+```
 Class		deinitializing{
      deinit(){   
+ }
 }
-}
+```
 
 
 
+* Javascript constructor:
 
-*Javascript constructor:
+```
 function Person(first, last, age, eye) {
     this.firstName = first;
     this.lastName = last;
     this.age = age;
     this.eyeColor = eye;
 }
-
-
-
-
-
-
-
+```

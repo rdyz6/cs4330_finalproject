@@ -1,9 +1,12 @@
+---
 NameSpace
-Global variables should be reserved for objects that have system-wide relevance and they should be named to avoid ambiguity and minmiz the risk of naming collision, which means we should aboid creating global variables unless it’s necessary. 
+---
+* Global variables should be reserved for objects that have system-wide relevance and they should be named to avoid ambiguity and minmiz the risk of naming collision, which means we should aboid creating global variables unless it’s necessary. 
+* The best global abatement strategy is to create a small number of global objects which will serve as the facto namespaces for underlying modules and subsystems.
+* Here are the implementation:
+** Direct assignment:
 
-The best global abatement strategy is to create a small number of global objects which will serve as the facto namespaces for underlying modules and subsystems.
-Here are the implementation:
-**Direct assignment:
+```
 var myApp = {}
 myApp.id = 0;
 myApp.next = function() {
@@ -53,7 +56,8 @@ window.console && console.log(
     myApp.reset(),
     myApp.next()
 ) //0, 1, undefined, 0  
+```
 
-The concept of namespaces, whereas exists in other programming languagedoes not exist in JavaScript. To add insult to injury, everything you create in JavaScript is by default global. To solve this problem we can create a single global object for your app and make all functions and variables properties of that global object.
+* The concept of namespaces, whereas exists in other programming languagedoes not exist in JavaScript. To add insult to injury, everything you create in JavaScript is by default global. To solve this problem we can create a single global object for your app and make all functions and variables properties of that global object.
 
 
